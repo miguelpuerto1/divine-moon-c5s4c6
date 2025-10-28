@@ -1,6 +1,6 @@
-"use client";
-import AgentsMarketplace from "./AgentsMarketplace";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  return <AgentsMarketplace />;
+export default function Home() {
+  redirect("/AgentsMarketplace");
 }
+
