@@ -1,6 +1,5 @@
 "use client";
 import React, { useMemo, useState } from "react";
-import { motion } from "framer-motion";
 import {
   Search,
   CreditCard,
@@ -15,7 +14,6 @@ import {
   ShoppingCart,
   Settings,
   Bot,
-  TrendingUp,
 } from "lucide-react";
 
 function Button({ children, className = "", ...props }) {
@@ -36,14 +34,6 @@ function Card({ children, className = "" }) {
     >
       {children}
     </div>
-  );
-}
-
-function Badge({ children }) {
-  return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-gray-900 text-white px-3 py-1 text-xs font-medium">
-      {children}
-    </span>
   );
 }
 
